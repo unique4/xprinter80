@@ -8,16 +8,16 @@
 // Zijiang ZJ-80
 {
   Manufacturer "Zijiang"
-  ModelName "ZJ-80 »
+  ModelName "ZJ-80"
   PCFileName "ZJ-80.ppd"
   Version "1.1"
   DriverType ps
   ModelNumber 80
   ManualCopies Yes
   Throughput 1
-  Attribute "NickName" "" "ZJ-80 »
-  Attribute "ShortNickName" "" "ZJ-80 »
-  Attribute "Product" "" "(zj-80) »
+  Attribute "NickName" "" "ZJ-80"
+  Attribute "ShortNickName" "" "ZJ-80"
+  Attribute "Product" "" "(zj-80)"
   Attribute "1284DeviceID" "" "MFG:Zijiang;CMD:Zijiang;MDL:ZJ-80;CLS:PRINTER;"
   Attribute "PSVersion" "" "(3010.000) 550"
   Attribute "LanguageLevel" "" "3"
@@ -27,7 +27,7 @@
   Attribute "TTRasterizer" "" "Type42"
   Filter "application/vnd.cups-raster 0 rastertozj"
   Group "CutGroup/Cut Options"
-    Option "FeedDist/Feed distance after print" PickOne AnySetup 0,0
+    Option "FeedDist/Feed distance after print" PickOne AnySetup 0
       Choice "0feed3mm/feed 3mm" ""
       Choice "1feed6mm/feed 6mm" ""
       Choice "2feed9mm/feed 9mm" ""
@@ -43,19 +43,19 @@
       Choice "12feed39mm/feed 39mm" ""
       Choice "13feed42mm/feed 42mm" ""
       Choice "14feed45mm/feed 45mm" ""
-    Option "BlankSpace/Blank space at page's end" PickOne AnySetup 0,0
+    Option "BlankSpace/Blank space at page's end" PickOne AnySetup 0
       Choice "0Print/Print" ""
       *Choice "1NoPrint/Do not print" ""
   Group "*CashDrawerGroup/Cash Drawer Control"
-    Option "CashDrawer1Setting/Cash Drawer 1" PickOne AnySetup 0,0
+    Option "CashDrawer1Setting/Cash Drawer 1" PickOne AnySetup 0
       *Choice "0NotCashDrawer1/Not Cash Drawer 1" ""
       Choice "1NotCashDrawer1BeforePrinting/Cash Drawer 1 Before Printing" ""
       Choice "2NotCashDrawer1BeforePrinting/Cash Drawer 1 After Printing" ""
-    Option "CashDrawer2Setting/Cash Drawer 2" PickOne AnySetup 0,0
+    Option "CashDrawer2Setting/Cash Drawer 2" PickOne AnySetup 0
       *Choice "0NotCashDrawer2/Not Cash Drawer 2" ""
       Choice "1NotCashDrawer2BeforePrinting/Cash Drawer 2 Before Printing" ""
       Choice "2NotCashDrawer2BeforePrinting/Cash Drawer 2 After Printing" ""
-  *CustomMedia "X72MMY105MM/80mm x 105mm" 204,00 300,00 0,00 0,00 0,00 0,00 "<</PageSize[204 300]/HWResolution[203 203]/ImagingBBox null>>setpagedevice" "<</PageSize[226 300]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
-  CustomMedia "X48MMY297MM/58mm x 297mm" 136,00 842,00 0,00 0,00 0,00 0,00 "<</PageSize[136 842]/HWResolution[203 203]/ImagingBBox null>>setpagedevice" "<</PageSize[164 842]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
-  CustomMedia "X48MMY3276MM/58mm x 3276mm" 136,00 9286,00 0,00 0,00 0,00 0,00 "<</PageSize[136 9286]/HWResolution[203 203]/ImagingBBox null>>setpagedevice" "<</PageSize[164 9286]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+  *CustomMedia "X72MMY105MM/80mm x 105mm" 204 300 0 0 0 0 "<</PageSize[204 300]/HWResolution[203 203]/ImagingBBox null>>setpagedevice" "<</PageSize[226 300]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+  CustomMedia "X72MMY297MM/80mm x 297mm" 204 842 0 0 0 0 "<</PageSize[204 842]/HWResolution[203 203]/ImagingBBox null>>setpagedevice" "<</PageSize[226 842]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
+  CustomMedia "X72MMY3276MM/80mm x 3276mm" 204 9286 0 0 0 0 "<</PageSize[204 9286]/HWResolution[203 203]/ImagingBBox null>>setpagedevice" "<</PageSize[226 9286]/HWResolution[203 203]/ImagingBBox null>>setpagedevice"
 }

@@ -42,6 +42,10 @@ static const struct command cashDrawerEject [2] =
 static const struct command rasterModeStartCommand =
 {4,(char[4]){0x1d,0x76,0x30,0}};
 
+// define cutter command
+static const struct command cutCommand = 
+{4,(char[4]){0x1d,0x56,66,10}};
+
 #ifdef DEBUGP
 FILE* lfd = 0;
 #endif
@@ -166,6 +170,10 @@ void ShutDown()
 }
 
 // sent at the end of every page
+#ifndef __sighandler_t
+typedef void (*__sighandler_t) (int);
+#endif
+
 __sighandler_t old_signal;
 void EndPage()
 {
@@ -173,6 +181,7 @@ void EndPage()
 	for (i=0; i<settings.feedDist; ++i)
 		skiplines(0x18);
 	signal(15,old_signal);
+	outputCommand(cutCommand);
 }
 
 // sent on job canceling
